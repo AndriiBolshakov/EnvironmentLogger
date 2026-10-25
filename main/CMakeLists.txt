@@ -1,0 +1,21 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "sdcard.c"
+        "bme280.c"
+        "font.c"
+        "i2c.c"
+        "oled.c"
+        "render.c"
+        "rtc.c"
+        "encoder.c"
+    INCLUDE_DIRS "."
+    REQUIRES
+        fatfs
+        sdmmc
+        esp_driver_spi
+        esp_driver_i2c
+        esp_lcd
+        esp_timer
+        driver
+)
